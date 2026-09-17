@@ -19,7 +19,6 @@ for (let i = 0; i < orbCount; i++) {
 const phrases = [
   "Junior Developer",
   "CS Undergraduate",
-  "Ninja Developer",
   "Believe It! (Dattebayo!)",
 ];
 let phraseIndex = 0, charIndex = 0, deleting = false;
