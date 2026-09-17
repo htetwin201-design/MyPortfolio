@@ -1,25 +1,26 @@
 /* ===== Portfolio interactions ===== */
 
-// ---------- Sakura petals ----------
-const petalsContainer = document.getElementById("petals");
-const petalCount = window.innerWidth < 768 ? 12 : 22;
-for (let i = 0; i < petalCount; i++) {
-  const petal = document.createElement("div");
-  petal.className = "petal";
-  petal.textContent = "🌸";
-  petal.style.left = Math.random() * 100 + "vw";
-  petal.style.fontSize = 10 + Math.random() * 14 + "px";
-  petal.style.animationDuration = 7 + Math.random() * 10 + "s";
-  petal.style.animationDelay = Math.random() * 10 + "s";
-  petalsContainer.appendChild(petal);
+// ---------- Falling Sharingan ----------
+const orbsContainer = document.getElementById("petals");
+const orbCount = window.innerWidth < 768 ? 10 : 18;
+for (let i = 0; i < orbCount; i++) {
+  const orb = document.createElement("div");
+  orb.className = "sharingan";
+  const size = 16 + Math.random() * 26;
+  orb.style.width = size + "px";
+  orb.style.height = size + "px";
+  orb.style.left = Math.random() * 100 + "vw";
+  orb.style.animationDuration = 9 + Math.random() * 12 + "s";
+  orb.style.animationDelay = -Math.random() * 20 + "s";
+  orbsContainer.appendChild(orb);
 }
 
 // ---------- Typewriter effect ----------
 const phrases = [
   "Junior Developer",
   "CS Undergraduate",
-  "Web Developer",
-  "Anime Fan & Problem Solver",
+  "Ninja Developer",
+  "Believe It! (Dattebayo!)",
 ];
 let phraseIndex = 0, charIndex = 0, deleting = false;
 const typeEl = document.getElementById("typewriter");

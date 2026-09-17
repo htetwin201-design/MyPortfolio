@@ -20,11 +20,11 @@ body {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #fb6f92, #8ee3ef);
+  background: linear-gradient(90deg, #c1121f, #f77f00);
   border-radius: 2px;
   transition: width 0.3s;
 }
-.nav-link:hover { color: #ff8fab; }
+.nav-link:hover { color: #ff5a4f; }
 .nav-link:hover::after { width: 100%; }
 
 /* ---- Buttons ---- */
@@ -34,7 +34,7 @@ body {
   border-radius: 9999px;
   font-weight: 600;
   color: #1a1a2e;
-  background: linear-gradient(135deg, #ff8fab, #fb6f92);
+  background: linear-gradient(135deg, #ff5a4f, #c1121f);
   box-shadow: 0 4px 20px rgba(251, 111, 92, 0.4);
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -47,8 +47,8 @@ body {
   padding: 0.65rem 1.6rem;
   border-radius: 9999px;
   font-weight: 600;
-  color: #8ee3ef;
-  border: 2px solid #8ee3ef;
+  color: #f77f00;
+  border: 2px solid #f77f00;
   transition: all 0.2s;
 }
 .btn-outline:hover {
@@ -88,7 +88,7 @@ body {
   font-size: 0.7rem;
   border-radius: 9999px;
   background: rgba(142, 227, 239, 0.1);
-  color: #8ee3ef;
+  color: #f77f00;
   border: 1px solid rgba(142, 227, 239, 0.3);
 }
 
@@ -139,17 +139,42 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
-/* ---- Sakura petals ---- */
-.petal {
+/* ---- Falling Sharingan ---- */
+.sharingan {
   position: absolute;
-  top: -40px;
-  color: #ff8fab;
-  opacity: 0.6;
-  animation: fall linear infinite;
+  top: -70px;
+  border-radius: 50%;
+  opacity: 0.85;
   user-select: none;
+  background:
+    radial-gradient(circle 2px at 50% 24%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 2px at 74% 70%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 2px at 26% 70%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 5px at 50% 50%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle, #e01e2b 0 58%, #a30f1a 60% 78%, #e01e2b 80%);
+  box-shadow: inset 0 0 0 2px rgba(13, 13, 20, 0.6), 0 0 14px rgba(224, 30, 43, 0.7);
+  animation: sharinganFall linear infinite;
 }
-@keyframes fall {
-  to { transform: translateY(110vh) rotate(360deg); }
+@keyframes sharinganFall {
+  from { transform: translateY(-12vh) rotate(0deg); }
+  to { transform: translateY(115vh) rotate(720deg); }
+}
+
+/* ---- Big spinning Sharingan behind the photo ---- */
+.big-sharingan {
+  border-radius: 50%;
+  opacity: 0.4;
+  background:
+    radial-gradient(circle 10px at 50% 18%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 10px at 79% 74%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 10px at 21% 74%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle 22px at 50% 50%, #0d0d14 62%, transparent 64%),
+    radial-gradient(circle, #e01e2b 0 55%, #7a0c16 58% 72%, #e01e2b 75%);
+  box-shadow: inset 0 0 0 4px rgba(13, 13, 20, 0.5), 0 0 60px rgba(224, 30, 43, 0.5);
+  animation: sharinganSpin 26s linear infinite;
+}
+@keyframes sharinganSpin {
+  to { transform: rotate(360deg); }
 }
 
 /* ---- Typewriter cursor ---- */

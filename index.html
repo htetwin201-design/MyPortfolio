@@ -19,11 +19,11 @@
             tech: ['Zen Dots', 'sans-serif'],
           },
           colors: {
-            sakura: '#ff8fab',
-            sakuradeep: '#fb6f92',
+            akared: '#ff5a4f',
+            akadeep: '#c1121f',
             night: '#1a1a2e',
             nightcard: '#23233f',
-            mint: '#8ee3ef',
+            naruto: '#f77f00',
             lemon: '#ffd166',
           },
         },
@@ -34,13 +34,13 @@
 </head>
 <body class="font-pop bg-night text-slate-200 overflow-x-hidden">
 
-  <!-- ===== Floating sakura petals ===== -->
+  <!-- ===== Falling Sharingan ===== -->
   <div id="petals" class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"></div>
 
   <!-- ===== Navbar ===== -->
   <header class="fixed top-0 inset-x-0 z-50 transition-all duration-300" id="navbar">
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-      <a href="#hero" class="font-anime text-xl text-sakura drop-shadow-[0_0_10px_rgba(255,143,171,0.6)]">HNW<span class="text-mint">.dev</span></a>
+      <a href="#hero" class="font-anime text-xl text-akared drop-shadow-[0_0_10px_rgba(224,30,43,0.6)]">HNW<span class="text-naruto">.dev</span></a>
       <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
         <li><a class="nav-link" href="#about">About</a></li>
         <li><a class="nav-link" href="#skills">Skills</a></li>
@@ -49,7 +49,7 @@
         <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
       <a href="#contact" class="hidden md:inline-block btn-anime text-sm">Hire Me!</a>
-      <button id="menu-btn" class="md:hidden text-sakura text-3xl leading-none" aria-label="Toggle menu">☰</button>
+      <button id="menu-btn" class="md:hidden text-akared text-3xl leading-none" aria-label="Toggle menu">☰</button>
     </nav>
     <div id="mobile-menu" class="md:hidden hidden bg-nightcard/95 backdrop-blur px-6 py-4 space-y-3 text-sm">
       <a class="block nav-link" href="#about">About</a>
@@ -64,9 +64,9 @@
   <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 z-10">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div class="text-center md:text-left">
-        <p class="font-tech text-mint text-sm tracking-widest mb-4">// HELLO WORLD, I'M</p>
-        <h1 class="font-anime text-4xl md:text-6xl text-white leading-tight drop-shadow-[0_0_20px_rgba(251,111,146,0.4)]">
-          Htet Naing <span class="text-sakura">Win</span>
+        <p class="font-tech text-naruto text-sm tracking-widest mb-4">// BELIEVE IT! I'M</p>
+        <h1 class="font-anime text-4xl md:text-6xl text-white leading-tight drop-shadow-[0_0_20px_rgba(224,30,43,0.4)]">
+          Htet Naing <span class="text-akared">Win</span>
         </h1>
         <p class="mt-4 text-lg md:text-xl text-lemon font-semibold">
           <span id="typewriter"></span><span class="cursor-blink">|</span>
@@ -80,42 +80,42 @@
           <a href="#contact" class="btn-outline">Contact Me</a>
         </div>
         <div class="mt-10 flex flex-wrap gap-4 justify-center md:justify-start text-sm text-slate-400">
-          <a href="tel:+959885973143" class="hover:text-sakura transition">📞 +95 988 597 3143</a>
-          <a href="mailto:htetwin201@gmail.com" class="hover:text-sakura transition">✉ htetwin201@gmail.com</a>
+          <a href="tel:+959885973143" class="hover:text-akared transition">📞 +95 988 597 3143</a>
+          <a href="mailto:htetwin201@gmail.com" class="hover:text-akared transition">✉ htetwin201@gmail.com</a>
         </div>
       </div>
 
       <div class="relative flex justify-center">
-        <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-sakura/30 rounded-full blur-3xl"></div>
-        <div class="absolute w-56 h-56 md:w-72 md:h-72 bg-mint/20 rounded-full blur-2xl"></div>
+        <div class="big-sharingan absolute inset-0 m-auto w-72 h-72 md:w-[28rem] md:h-[28rem]" aria-hidden="true"></div>
+        <div class="absolute w-80 h-80 md:w-[32rem] md:h-[32rem] bg-akared/25 rounded-full blur-3xl"></div>
         <img src="images/HtetNaingWin.png" alt="Htet Naing Win"
-             class="relative w-64 md:w-96 float-anim drop-shadow-[0_10px_40px_rgba(251,111,146,0.4)]" />
-        <div class="speech-bubble absolute -top-2 -right-2 md:right-4">Write code! (コードを書く！)</div>
-        <div class="speech-bubble2 absolute bottom-4 left-0 md:left-6">coding + anime = 💜</div>
+             class="relative w-80 md:w-[30rem] float-anim drop-shadow-[0_10px_50px_rgba(224,30,43,0.55)]" />
+        <div class="speech-bubble absolute -top-2 -right-2 md:right-4">Believe it! (Dattebayo!)</div>
+        <div class="speech-bubble2 absolute bottom-4 left-0 md:left-6">ninjas + coders = 🔥</div>
       </div>
     </div>
-    <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-sakura text-3xl bounce-anim" aria-label="Scroll down">⌄</a>
+    <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-akared text-3xl bounce-anim" aria-label="Scroll down">⌄</a>
   </section>
 
   <!-- ===== About ===== -->
   <section id="about" class="relative py-24 px-6 z-10">
     <div class="max-w-4xl mx-auto reveal">
-      <h2 class="section-title">About Me <span class="text-mint text-base font-pop">About</span></h2>
+      <h2 class="section-title">About Me <span class="text-naruto text-base font-pop">The Ninja's Path</span></h2>
       <div class="card-anime mt-10 p-8 md:p-10">
         <p class="leading-relaxed text-slate-300">
           I'm a <strong class="text-lemon">final-year Computer Science undergraduate</strong> at the University of
-          Computer Studies (Pyay), Myanmar, seeking a <strong class="text-sakura">Junior Developer</strong> role.
+          Computer Studies (Pyay), Myanmar, seeking a <strong class="text-akared">Junior Developer</strong> role.
           I have a strong foundation in programming, web development, and database systems, with hands-on
           academic project experience and team leadership roles.
         </p>
         <p class="leading-relaxed text-slate-300 mt-4">
           I'm highly motivated to learn, adapt, and contribute to real-world software development environments.
-          Beyond the code, I'm an anime fan who believes great storytelling and great software share the same
-          secret: attention to detail and passion. 🌸
+          Beyond the code, I'm a huge Naruto fan — I believe great ninja and great developers share the same
+          secret: hard work, teamwork, and never giving up. That's my ninja way! 🔥
         </p>
         <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-          <div class="stat-chip"><span class="font-anime text-2xl text-sakura">6+</span><br><span class="text-xs text-slate-400">Projects</span></div>
-          <div class="stat-chip"><span class="font-anime text-2xl text-mint">5×</span><br><span class="text-xs text-slate-400">Team Leader</span></div>
+          <div class="stat-chip"><span class="font-anime text-2xl text-akared">6+</span><br><span class="text-xs text-slate-400">Projects</span></div>
+          <div class="stat-chip"><span class="font-anime text-2xl text-naruto">5×</span><br><span class="text-xs text-slate-400">Team Leader</span></div>
           <div class="stat-chip"><span class="font-anime text-2xl text-lemon">2027</span><br><span class="text-xs text-slate-400">Graduation</span></div>
           <div class="stat-chip"><span class="font-anime text-2xl text-white">∞</span><br><span class="text-xs text-slate-400">Curiosity</span></div>
         </div>
@@ -126,10 +126,10 @@
   <!-- ===== Skills ===== -->
   <section id="skills" class="relative py-24 px-6 z-10">
     <div class="max-w-6xl mx-auto reveal">
-      <h2 class="section-title">Skills <span class="text-mint text-base font-pop">Skills</span></h2>
+      <h2 class="section-title">Skills <span class="text-naruto text-base font-pop">Jutsu Inventory</span></h2>
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="card-anime p-6 hover-lift">
-          <h3 class="font-anime text-sakura text-lg mb-4">⌨ Languages</h3>
+          <h3 class="font-anime text-akared text-lg mb-4">⌨ Languages</h3>
           <ul class="space-y-2 text-sm text-slate-300">
             <li>HTML5, CSS3, JavaScript (ES6+)</li>
             <li>PHP, Java (J2SE, J2EE)</li>
@@ -138,7 +138,7 @@
           </ul>
         </div>
         <div class="card-anime p-6 hover-lift">
-          <h3 class="font-anime text-mint text-lg mb-4">🎨 Web & Frontend</h3>
+          <h3 class="font-anime text-naruto text-lg mb-4">🎨 Web & Frontend</h3>
           <ul class="space-y-2 text-sm text-slate-300">
             <li>Responsive Web Design</li>
             <li>Bootstrap</li>
@@ -156,20 +156,20 @@
           </ul>
         </div>
         <div class="card-anime p-6 hover-lift">
-          <h3 class="font-anime text-sakuradeep text-lg mb-4">🗄 Database</h3>
+          <h3 class="font-anime text-akadeep text-lg mb-4">🗄 Database</h3>
           <ul class="space-y-2 text-sm text-slate-300">
             <li>MySQL — schema design & normalization</li>
             <li>SQL queries & CRUD operations</li>
           </ul>
         </div>
         <div class="card-anime p-6 hover-lift">
-          <h3 class="font-anime text-mint text-lg mb-4">🌱 Currently Learning</h3>
+          <h3 class="font-anime text-naruto text-lg mb-4">🌱 Currently Learning</h3>
           <ul class="space-y-2 text-sm text-slate-300">
             <li>React (components, basic hooks)</li>
             <li>Node.js backend fundamentals & REST</li>
           </ul>
           <div class="mt-4 h-2 rounded-full bg-night overflow-hidden">
-            <div class="h-full w-1/2 bg-gradient-to-r from-mint to-sakura animate-pulse"></div>
+            <div class="h-full w-1/2 bg-gradient-to-r from-naruto to-akared animate-pulse"></div>
           </div>
           <p class="text-xs text-slate-500 mt-1">Level up in progress…</p>
         </div>
@@ -188,7 +188,7 @@
   <!-- ===== Projects ===== -->
   <section id="projects" class="relative py-24 px-6 z-10">
     <div class="max-w-6xl mx-auto reveal">
-      <h2 class="section-title">Projects <span class="text-mint text-base font-pop">Projects</span></h2>
+      <h2 class="section-title">Projects <span class="text-naruto text-base font-pop">Completed Missions</span></h2>
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="card-anime p-6 hover-lift">
           <div class="text-4xl mb-3">🎓</div>
@@ -233,12 +233,12 @@
   <!-- ===== Education ===== -->
   <section id="education" class="relative py-24 px-6 z-10">
     <div class="max-w-4xl mx-auto reveal">
-      <h2 class="section-title">Education <span class="text-mint text-base font-pop">Education</span></h2>
+      <h2 class="section-title">Education <span class="text-naruto text-base font-pop">Training Ground</span></h2>
       <div class="card-anime mt-10 p-8 md:p-10 flex gap-6 items-start">
         <div class="text-5xl shrink-0">🏫</div>
         <div>
           <h3 class="font-anime text-xl text-white">University of Computer Studies (Pyay)</h3>
-          <p class="text-sakura font-semibold mt-1">Bachelor of Computer Science — Undergraduate</p>
+          <p class="text-akared font-semibold mt-1">Bachelor of Computer Science — Undergraduate</p>
           <p class="text-sm text-slate-400 mt-2">Expected to graduate in <strong class="text-lemon">February 2027</strong>. Focused on programming, web development, database systems, and software engineering practices.</p>
         </div>
       </div>
@@ -248,10 +248,10 @@
   <!-- ===== Contact ===== -->
   <section id="contact" class="relative py-24 px-6 z-10">
     <div class="max-w-4xl mx-auto reveal">
-      <h2 class="section-title">Contact <span class="text-mint text-base font-pop">Contact</span></h2>
+      <h2 class="section-title">Contact <span class="text-naruto text-base font-pop">Summoning Jutsu</span></h2>
       <div class="mt-10 card-anime p-8 md:p-10 text-center">
-        <p class="font-anime text-sakura text-2xl">Let's build something together!</p>
-        <p class="text-slate-400 mt-3">Open to Junior Developer opportunities — I'd love to hear from you. 🌸</p>
+        <p class="font-anime text-akared text-2xl">Let's build something together!</p>
+        <p class="text-slate-400 mt-3">Open to Junior Developer opportunities — summon me anytime. 🔥</p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="mailto:htetwin201@gmail.com" class="btn-anime">✉ Email Me</a>
           <a href="tel:+959885973143" class="btn-outline">📞 Call Me</a>
@@ -263,7 +263,7 @@
 
   <!-- ===== Footer ===== -->
   <footer class="relative py-8 text-center text-sm text-slate-500 border-t border-white/5 z-10">
-    <p>© 2026 Htet Naing Win · Built with ❤, HTML, Tailwind CSS & a lot of anime ☕</p>
+    <p>© 2026 Htet Naing Win · Built with ❤, HTML, Tailwind CSS & the Will of Fire 🔥</p>
   </footer>
 
   <button id="top-btn" class="fixed bottom-6 right-6 z-50 hidden w-12 h-12 rounded-full btn-anime !p-0 items-center justify-center" aria-label="Back to top">↑</button>
