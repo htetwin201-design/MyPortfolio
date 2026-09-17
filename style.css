@@ -1,0 +1,172 @@
+/* ===== Custom styles beyond Tailwind ===== */
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(251, 111, 146, 0.15), transparent 60%),
+    radial-gradient(900px 500px at -10% 40%, rgba(142, 227, 239, 0.10), transparent 60%),
+    #1a1a2e;
+}
+
+/* ---- Navigation ---- */
+.nav-link {
+  position: relative;
+  color: #cbd5e1;
+  transition: color 0.25s;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #fb6f92, #8ee3ef);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.nav-link:hover { color: #ff8fab; }
+.nav-link:hover::after { width: 100%; }
+
+/* ---- Buttons ---- */
+.btn-anime {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #1a1a2e;
+  background: linear-gradient(135deg, #ff8fab, #fb6f92);
+  box-shadow: 0 4px 20px rgba(251, 111, 92, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-anime:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(251, 111, 146, 0.55);
+}
+.btn-outline {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #8ee3ef;
+  border: 2px solid #8ee3ef;
+  transition: all 0.2s;
+}
+.btn-outline:hover {
+  background: rgba(142, 227, 239, 0.12);
+  transform: translateY(-3px);
+}
+
+/* ---- Section titles ---- */
+.section-title {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 25px rgba(251, 111, 146, 0.45);
+}
+.section-title span { display: block; margin-top: 0.4rem; }
+
+/* ---- Cards ---- */
+.card-anime {
+  background: rgba(35, 35, 63, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 143, 171, 0.15);
+  border-radius: 1.25rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.card-anime:hover {
+  border-color: rgba(251, 111, 146, 0.5);
+  box-shadow: 0 10px 40px rgba(251, 111, 146, 0.15);
+}
+.hover-lift:hover { transform: translateY(-6px); }
+.hover-lift { transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; }
+
+.tag {
+  display: inline-block;
+  margin: 0.5rem 0.25rem 0 0;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.7rem;
+  border-radius: 9999px;
+  background: rgba(142, 227, 239, 0.1);
+  color: #8ee3ef;
+  border: 1px solid rgba(142, 227, 239, 0.3);
+}
+
+.stat-chip {
+  padding: 0.8rem 0.4rem;
+  border-radius: 1rem;
+  background: rgba(26, 26, 46, 0.7);
+  border: 1px solid rgba(255, 209, 102, 0.15);
+}
+
+/* ---- Speech bubbles (anime style) ---- */
+.speech-bubble, .speech-bubble2 {
+  position: relative;
+  background: #fff;
+  color: #1a1a2e;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  animation: bubblePop 0.6s ease-out both;
+}
+.speech-bubble::after, .speech-bubble2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  border: 8px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+}
+.speech-bubble2 { animation-delay: 0.4s; }
+
+/* ---- Animations ---- */
+.float-anim { animation: float 5s ease-in-out infinite; }
+.bounce-anim { animation: bounce 2s infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(10px); opacity: 0.5; }
+}
+@keyframes bubblePop {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ---- Sakura petals ---- */
+.petal {
+  position: absolute;
+  top: -40px;
+  color: #ff8fab;
+  opacity: 0.6;
+  animation: fall linear infinite;
+  user-select: none;
+}
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(360deg); }
+}
+
+/* ---- Typewriter cursor ---- */
+.cursor-blink { animation: blink 1s steps(1) infinite; color: #ffd166; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---- Scroll reveal ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ---- Navbar on scroll ---- */
+#navbar.scrolled {
+  background: rgba(26, 26, 46, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 143, 171, 0.15);
+}
